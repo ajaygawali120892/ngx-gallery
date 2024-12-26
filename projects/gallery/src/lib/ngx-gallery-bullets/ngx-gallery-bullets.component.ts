@@ -6,7 +6,6 @@ import { NgClass } from '@angular/common';
     templateUrl: './ngx-gallery-bullets.component.html',
     styleUrls: ['./ngx-gallery-bullets.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [NgClass]
 })
 export class NgxGalleryBulletsComponent {

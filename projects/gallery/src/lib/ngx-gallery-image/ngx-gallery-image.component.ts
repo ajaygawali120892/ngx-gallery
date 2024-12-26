@@ -70,7 +70,6 @@ type Orientation = ('slideLeft' | 'slideRight' | 'fade' | 'rotateLeft' | 'rotate
             ]),
         ]),
     ],
-    standalone: true,
     imports: [NgClass, NgxGalleryActionComponent, NgxGalleryBulletsComponent, NgxGalleryArrowsComponent]
 })
 export class NgxGalleryImageComponent implements OnInit, OnChanges {

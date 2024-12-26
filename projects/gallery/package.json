@@ -16,12 +16,12 @@
     "url": "https://github.com/vinlos/ngx-gallery/issues"
   },
   "peerDependencies": {
-    "@angular/common": ">=18.2.9",
-    "@angular/core": ">=18.2.9",
-    "@angular/animations": ">=18.2.9"
+    "@angular/common": ">=19.0.5",
+    "@angular/core": ">=19.0.5",
+    "@angular/animations": ">=119.0.5"
   },
   "dependencies": {
-    "tslib": "^2.6.2"
+    "tslib": "^2.8.1"
   },
   "keywords": [
     "angular",

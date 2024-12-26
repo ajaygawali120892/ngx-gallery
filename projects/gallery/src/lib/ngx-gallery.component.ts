@@ -17,7 +17,6 @@ import { NgClass } from '@angular/common';
     encapsulation: ViewEncapsulation.None,
     providers: [NgxGalleryService],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [NgxGalleryImageComponent, NgxGalleryThumbnailsComponent, NgClass, NgxGalleryPreviewComponent]
 })
 export class NgxGalleryComponent implements OnInit, DoCheck, AfterViewInit {

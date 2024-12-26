@@ -12,7 +12,6 @@ import { NgxGalleryArrowsComponent } from '../ngx-gallery-arrows/ngx-gallery-arr
     templateUrl: './ngx-gallery-thumbnails.component.html',
     styleUrls: ['./ngx-gallery-thumbnails.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [NgClass, NgxGalleryActionComponent, NgxGalleryArrowsComponent]
 })
 export class NgxGalleryThumbnailsComponent implements OnChanges {

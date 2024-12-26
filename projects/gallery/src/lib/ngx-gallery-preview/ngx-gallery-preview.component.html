@@ -7,7 +7,7 @@
   <div class="ngx-gallery-preview-icons">
     @for (action of actions; track action) {
       <ngx-gallery-action [icon]="action.icon" [disabled]="action.disabled"
-      [titleText]="action.titleText" (closeClick)="action.onClick($event, index)"></ngx-gallery-action>
+      [titleText]="action.titleText" (closeClick)="action.onClick($event, index)" />
     }
     @if (download && src) {
       <a [href]="src" class="ngx-gallery-icon" aria-hidden="true" download>
@@ -16,23 +16,23 @@
     }
     @if (zoom) {
       <ngx-gallery-action [icon]="zoomOutIcon" [disabled]="!canZoomOut()"
-      (closeClick)="zoomOut()"></ngx-gallery-action>
+      (closeClick)="zoomOut()" />
     }
     @if (zoom) {
       <ngx-gallery-action [icon]="zoomInIcon" [disabled]="!canZoomIn()"
-      (closeClick)="zoomIn()"></ngx-gallery-action>
+      (closeClick)="zoomIn()" />
     }
     @if (rotate) {
-      <ngx-gallery-action [icon]="rotateLeftIcon" (closeClick)="rotateLeft()"></ngx-gallery-action>
+      <ngx-gallery-action [icon]="rotateLeftIcon" (closeClick)="rotateLeft()" />
     }
     @if (rotate) {
-      <ngx-gallery-action [icon]="rotateRightIcon" (closeClick)="rotateRight()"></ngx-gallery-action>
+      <ngx-gallery-action [icon]="rotateRightIcon" (closeClick)="rotateRight()" />
     }
     @if (fullscreen) {
       <ngx-gallery-action [icon]="'ngx-gallery-fullscreen ' + fullscreenIcon"
-      (closeClick)="manageFullscreen()"></ngx-gallery-action>
+      (closeClick)="manageFullscreen()" />
     }
-    <ngx-gallery-action [icon]="'ngx-gallery-close ' + closeIcon" (closeClick)="close()"></ngx-gallery-action>
+    <ngx-gallery-action [icon]="'ngx-gallery-close ' + closeIcon" (closeClick)="close()" />
   </div>
 </div>
 <div class="ngx-spinner-wrapper ngx-gallery-center" [class.ngx-gallery-active]="showSpinner">
@@ -59,7 +59,7 @@
     }
     @if (bullets) {
       <ngx-gallery-bullets [count]="images.length" [active]="index"
-      (bulletChange)="showAtIndex($event)"></ngx-gallery-bullets>
+      (bulletChange)="showAtIndex($event)" />
     }
   </div>
   @if (showDescription && description) {

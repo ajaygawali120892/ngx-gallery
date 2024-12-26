@@ -24,7 +24,7 @@
         <div class="ngx-gallery-icons-wrapper">
           @for (action of actions; track action) {
             <ngx-gallery-action [icon]="action.icon" [disabled]="action.disabled"
-            [titleText]="action.titleText" (closeClick)="action.onClick($event, i)"></ngx-gallery-action>
+            [titleText]="action.titleText" (closeClick)="action.onClick($event, i)" />
           }
         </div>
         @if (remainingCount && remainingCountValue && (i === (rows * columns) - 1)) {
@@ -40,5 +40,5 @@
 @if (canShowArrows()) {
   <ngx-gallery-arrows (prevClick)="moveLeft()" (nextClick)="moveRight()"
     [prevDisabled]="!canMoveLeft()" [nextDisabled]="!canMoveRight()" [arrowPrevIcon]="arrowPrevIcon"
-  [arrowNextIcon]="arrowNextIcon"></ngx-gallery-arrows>
+  [arrowNextIcon]="arrowNextIcon" />
 }

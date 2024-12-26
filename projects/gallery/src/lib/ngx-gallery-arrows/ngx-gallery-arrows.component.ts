@@ -5,7 +5,6 @@ import {ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output}
     templateUrl: './ngx-gallery-arrows.component.html',
     styleUrls: ['./ngx-gallery-arrows.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true
 })
 export class NgxGalleryArrowsComponent {
   @Input() prevDisabled: boolean;

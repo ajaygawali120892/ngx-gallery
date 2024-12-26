@@ -5,7 +5,6 @@ import {ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output}
     templateUrl: './ngx-gallery-action.component.html',
     styleUrls: ['./ngx-gallery-action.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true
 })
 export class NgxGalleryActionComponent {
   @Input() icon: string;

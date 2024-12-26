@@ -12,7 +12,7 @@
           @for (action of actions; track action) {
             <ngx-gallery-action [icon]="action.icon" [disabled]="action.disabled"
               [titleText]="action.titleText"
-            (closeClick)="action.onClick($event, image.index)"></ngx-gallery-action>
+            (closeClick)="action.onClick($event, image.index)" />
           }
         </div>
         @if (showDescription && descriptions[image.index]) {
@@ -37,7 +37,7 @@
           @for (action of actions; track action) {
             <ngx-gallery-action [icon]="action.icon" [disabled]="action.disabled"
               [titleText]="action.titleText"
-            (closeClick)="action.onClick($event, image.index)"></ngx-gallery-action>
+            (closeClick)="action.onClick($event, image.index)" />
           }
         </div>
         @if (showDescription && descriptions[image.index]) {
@@ -49,11 +49,11 @@
   }
   @if (bullets) {
     <ngx-gallery-bullets [count]="images.length" [active]="_selectedIndex"
-    (bulletChange)="show($event)"></ngx-gallery-bullets>
+    (bulletChange)="show($event)" />
   }
   @if (arrows) {
     <ngx-gallery-arrows class="ngx-gallery-image-size-{{size}}" (prevClick)="showPrev()"
       (nextClick)="showNext()" [prevDisabled]="!canShowPrev()" [nextDisabled]="!canShowNext()"
-    [arrowPrevIcon]="arrowPrevIcon" [arrowNextIcon]="arrowNextIcon"></ngx-gallery-arrows>
+    [arrowPrevIcon]="arrowPrevIcon" [arrowNextIcon]="arrowNextIcon" />
   }
 </div>

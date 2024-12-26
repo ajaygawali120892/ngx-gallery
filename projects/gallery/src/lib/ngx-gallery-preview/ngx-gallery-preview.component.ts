@@ -13,7 +13,6 @@ import { NgxGalleryBulletsComponent } from '../ngx-gallery-bullets/ngx-gallery-b
     styleUrls: ['./ngx-gallery-preview.component.scss'],
     // encapsulation: ViewEncapsulation.None,
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [NgxGalleryArrowsComponent, NgxGalleryActionComponent, NgxGalleryBulletsComponent]
 })
 export class NgxGalleryPreviewComponent implements OnInit, OnDestroy, OnChanges {
