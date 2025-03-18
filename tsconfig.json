@@ -13,7 +13,7 @@
     "declaration": false,
     "experimentalDecorators": true,
     "module": "es2020",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
     "typeRoots": [
@@ -29,7 +29,7 @@
       ],
       "@vinlos/ngx-gallery/*": [
         "dist/gallery/*"
-      ],
+      ]
     },
     "useDefineForClassFields": false
   },
